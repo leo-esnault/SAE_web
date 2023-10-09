@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 .slide img {
@@ -9,6 +9,9 @@ body {
     height: 600px;
 }
 
+.carousel-indicators{
+    padding-bottom: 15px;
+}
 
 .header {
     display: grid;
@@ -40,7 +43,7 @@ body {
 
 .navigation {
     text-align: center;
-    margin-top: 13px;
+    margin-top: 15px;
 }
 
 .navigation ul {
@@ -91,7 +94,7 @@ body {
 }
 
 .search-bar {
-    width: 250px;
+    width: 300px;
     height: 50px;
     background: rgba(255, 255, 255, 0.2);
     display: flex;
@@ -99,7 +102,7 @@ body {
     border-radius: 60px;
     padding: 0px 10px;
     margin-left: auto;
-    margin-right: 30px;
+    margin-right: 10px;
 }
 
 ::placeholder{
@@ -143,7 +146,7 @@ section#Sous_navbar > ul#l > li > img{
 }
 
 section#Sous_navbar > ul#l > li{
-    color: black;
+    color: white;
     font-weight: bold;
 }
 
@@ -172,7 +175,6 @@ section#Sous_navbar{
 .page{
     width: 100%;
     height: auto;
-    background: #00d7ed;
 }
 
 .caroussel{
@@ -184,7 +186,7 @@ section#Sous_navbar{
 }
 .caroussel .precedent{
     position: absolute;
-    top: 50%;
+    top: 60%;
     left: 30px;
     font-size:2em;
     color:#0016e9;
@@ -192,7 +194,7 @@ section#Sous_navbar{
 }
 .caroussel .suivant{
     position: absolute;
-    top: 50%;
+    top: 60%;
     right: 30px;
     font-size:2em;
     color:#0016e9;
@@ -214,12 +216,18 @@ section#Sous_navbar{
     border-radius: 10px;
     box-shadow: 1rem 1rem 1rem -1rem #595858;
 }
+.caroussel .post-wrapper .post .image-container{
+    overflow: hidden;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
 .caroussel .post-wrapper .post .info-actu{
     height: 130px;
     padding: 0px 5px;
 }
 .caroussel .post-wrapper .post .info-actu h4 {
     margin: 5px;
+    font-size: 18px;
 }
 .caroussel .post-wrapper .post .info-actu h4 a {
     text-decoration: none;
@@ -228,15 +236,28 @@ section#Sous_navbar{
 .caroussel .post-wrapper .post .info-actu h4 a:hover{
     color: #0016e9;
 }
+.caroussel .post-wrapper .post .info-actu h5 {
+    margin-top: 15px;
+    margin-left: 5px;
+    font-size: 15px;
+}
 .caroussel .post-wrapper .post .image-slide{
     width: 100%;
     height: 200px;
     border-top-right-radius: 10px;
     border-top-left-radius: 10px;
+    transition: transform 0.3s ease-in-out;
 }
+.caroussel .post-wrapper .post:hover .image-slide {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
 /* Médias queries pour rendre le menu responsive */
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1110px) {
     .search-box {
         display: none; /* Cacher la zone de recherche pour les petits écrans */
     }
