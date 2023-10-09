@@ -21,7 +21,7 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplay: true,
-        autoplaySpeed: 2000,
+        autoplaySpeed: 7000,
         nextArrow: $('.suivant'),
         prevArrow: $('.precedent'),
         responsive: [
@@ -29,7 +29,7 @@ $(document).ready(function(){
               breakpoint: 1300,
               settings: {
                 slidesToShow: 2,
-                slidesToScroll: 2
+                slidesToScroll: 1
               }
             },
             {
